@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1517101145 source:c:\users\antonrasmussen\google drive\school stuff\cs\odu_cs_spring_2018\3_cs361\galexy generator\galaxy_gen.cpp
+	<iostream>
+	<fstream>
+	<list>
+	<random>
+	<ctime>
+	<cmath>
+	"star.h"
+
+1517100580 c:\users\antonrasmussen\google drive\school stuff\cs\odu_cs_spring_2018\3_cs361\galexy generator\star.h
+

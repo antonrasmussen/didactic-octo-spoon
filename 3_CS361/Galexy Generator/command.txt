@@ -1,0 +1,3 @@
+set mapping spherical
+splot 'galaxy_data.txt' with points
+pause -1
