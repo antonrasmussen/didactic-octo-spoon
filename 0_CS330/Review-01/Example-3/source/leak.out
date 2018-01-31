@@ -1,0 +1,14 @@
+# starting Fri Jan 19 16:12:02 2018
+# memory overrun protection of 4 Bytes
+# initializing new memory with 0xAA
+# sweeping deleted memory with 0xEE
+# aborts on OVERWRITE_MEMORY 
+# not thread save; if you use threads, recompile with -DTHREAD_SAVE
+# internal buffer now 32768
+# finished Fri Jan 19 16:12:02 2018
+# LeakReport
+# from new @ |      size  # Pointer Addr
+L 0x7ff10a09f249          43  # 0x11c4310
+L 0x7ff10a09f249          39  # 0x11c4350
+# total allocation requests:     11 ; max. mem used 0 kBytes
+# leak     82 Bytes	:-(
