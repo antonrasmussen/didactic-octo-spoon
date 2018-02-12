@@ -21,7 +21,7 @@ int main()
     double rho=0.0;
     double rhoOld=100.0;
     int i=0;
-    while(fabs(rhoOld-rho)>.001)
+    while(fabs(rhoOld-rho)>.01)
     {   if(i>0){rhoOld=rho;}
         xnew[0]=(A[0][0]*x[0]) +(A[0][1]*x[1]);
         xnew[1]=(A[1][0]*x[0]) +(A[1][1]*x[1]);
