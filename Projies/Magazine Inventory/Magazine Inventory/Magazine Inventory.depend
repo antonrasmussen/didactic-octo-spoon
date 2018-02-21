@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1519183176 source:c:\users\antonrasmussen\google drive\school stuff\cs\odu_cs_spring_2018\projies\magazine inventory\magazinecollection.cpp
+	"magazineCollection.h"
+
+1519183156 c:\users\antonrasmussen\google drive\school stuff\cs\odu_cs_spring_2018\projies\magazine inventory\magazinecollection.h
+	<iostream>
+	<iomanip>
+	<string>
+

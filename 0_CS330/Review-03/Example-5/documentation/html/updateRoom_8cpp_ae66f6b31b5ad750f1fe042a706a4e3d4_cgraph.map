@@ -1,0 +1,6 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$updateRoom_8cpp.html#a056ead85c5cd7993253ccf383ee43ed7" title="buildHouse" alt="" coords="118,5,205,32"/>
+<area shape="rect" id="node4" href="$updateRoom_8cpp.html#a6ef976e945581e079acdeddc8f189b41" title="upgradeFlooring" alt="" coords="104,56,219,83"/>
+<area shape="rect" id="node3" href="$classHouse.html#a13cbcc156df50cd85dfe7a8fde385df4" title="House::addRoom" alt="" coords="267,5,391,32"/>
+<area shape="rect" id="node5" href="$classHouse.html#a4b4c400732f391db0ff7347c1f4fdb70" title="House::setName" alt="" coords="269,56,390,83"/>
+</map>

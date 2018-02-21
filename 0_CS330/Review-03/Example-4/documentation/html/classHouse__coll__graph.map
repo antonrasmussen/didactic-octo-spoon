@@ -1,0 +1,6 @@
+<map id="House" name="House">
+<area shape="rect" id="node2" href="$structHouse_1_1Node.html" title="{House::Node\n||+ Node()\l}" alt="" coords="105,597,204,675"/>
+<area shape="rect" id="node3" href="$classRoom.html" title="{Room\n|+ UNITS\l&#45; name\l|+ Room()\l+ Room()\l+ Room()\l+ Room()\l+ getDimensions()\l+ setDimensions()\l+ getFlooring()\l+ setFlooring()\l+ setName()\l+ getName()\l+ area()\l+ flooringCost()\l+ display()\l+ operator==()\l+ operator\&lt;()\l}" alt="" coords="90,235,219,533"/>
+<area shape="rect" id="node4" href="$classRoom_1_1DimensionSet.html" title="{Room::DimensionSet\n|&#45; length\l&#45; width\l|+ DimensionSet()\l+ DimensionSet()\l+ setLength()\l+ getLength()\l+ setWidth()\l+ getWidth()\l}" alt="" coords="5,5,152,171"/>
+<area shape="rect" id="node5" href="$structRoom_1_1Flooring.html" title="{Room::Flooring\n|+ type\l+ unitCost\l|+ Flooring()\l+ Flooring()\l}" alt="" coords="177,35,287,141"/>
+</map>

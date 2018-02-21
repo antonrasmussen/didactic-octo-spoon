@@ -1,0 +1,4 @@
+<map id="Room" name="Room">
+<area shape="rect" id="node2" href="$classRoom_1_1DimensionSet.html" title="{Room::DimensionSet\n|&#45; length\l&#45; width\l|+ DimensionSet()\l+ DimensionSet()\l+ setLength()\l+ getLength()\l+ setWidth()\l+ getWidth()\l}" alt="" coords="5,5,152,171"/>
+<area shape="rect" id="node3" href="$structRoom_1_1Flooring.html" title="{Room::Flooring\n|+ type\l+ unitCost\l|+ Flooring()\l+ Flooring()\l}" alt="" coords="177,35,287,141"/>
+</map>

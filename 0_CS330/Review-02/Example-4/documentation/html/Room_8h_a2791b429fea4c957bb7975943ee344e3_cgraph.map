@@ -1,0 +1,8 @@
+<map id="operator&lt;&lt;" name="operator&lt;&lt;">
+<area shape="rect" id="node2" href="$classRoom.html#ab351d4f8a5dd7d230c1d36c4a2a64e8e" title="Room::display" alt="" coords="139,129,245,156"/>
+<area shape="rect" id="node3" href="$utilities_8h.html#a334955a74c33e5d837de6484dc6a97da" title="println" alt="" coords="338,5,395,32"/>
+<area shape="rect" id="node4" href="$classRoom_1_1DimensionSet.html#a8b0aec7207d5128df0f9772160ac591f" title="Room::DimensionSet\l::getLength" alt="" coords="293,57,440,98"/>
+<area shape="rect" id="node5" href="$classRoom_1_1DimensionSet.html#a4b5ac2d711a372b86f5c4699b4f6bc5a" title="Room::DimensionSet\l::getWidth" alt="" coords="293,122,440,163"/>
+<area shape="rect" id="node6" href="$classRoom.html#afe53ef07e485ac556ff6d8a035f6dce9" title="Room::area" alt="" coords="321,188,412,215"/>
+<area shape="rect" id="node7" href="$classRoom.html#a1f003d77d99bb89b1c5b502f3a5fb42e" title="Room::flooringCost" alt="" coords="299,239,434,265"/>
+</map>
