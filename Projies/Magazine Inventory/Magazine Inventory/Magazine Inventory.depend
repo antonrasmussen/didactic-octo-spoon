@@ -7,3 +7,11 @@
 	<iomanip>
 	<string>
 
+1519187618 source:c:\users\antonrasmussen\google drive\school stuff\cs\odu_cs_spring_2018\projies\magazine inventory\magazinedriver.cpp
+	<iostream>
+	<iomanip>
+	<ctime>
+	<cstdlib>
+	<string>
+	"magazineCollection.h"
+
