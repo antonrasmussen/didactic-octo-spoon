@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1519721642 source:c:\users\antonrasmussen\google drive\school stuff\cs\odu_cs_spring_2018\projies\intcell\intcell.cpp
+	"IntCell.h"
+
+1519721742 c:\users\antonrasmussen\google drive\school stuff\cs\odu_cs_spring_2018\projies\intcell\intcell.h
+
+1519721405 source:c:\users\antonrasmussen\google drive\school stuff\cs\odu_cs_spring_2018\projies\intcell\testintcell.cpp
+	<iostream>
+	"IntCell.h"
+
