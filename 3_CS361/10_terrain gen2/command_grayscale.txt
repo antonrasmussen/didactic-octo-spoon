@@ -1,0 +1,15 @@
+set view map
+set isosamples 100, 100
+unset surface
+set style data pm3d
+set style function pm3d
+set ticslevel 0
+set title "gray map, negative" 0.000000,0.000000  font ""
+set title "gray map, negative" 0.000000,0.000000  font ""
+set xlabel "x" 0.000000,0.000000  font ""
+
+set pm3d at b
+set palette positive nops_allcF maxcolors 0 gamma 1.5 gray
+
+splot 'terrain.txt' matrix with lines notitle
+pause -1

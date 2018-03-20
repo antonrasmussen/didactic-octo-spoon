@@ -1,0 +1,12 @@
+
+set isosamples 100, 100
+
+set samples 30, 30
+
+set hidden3d offset 1 trianglepattern 3 undefined 1 altdiagonal bentover
+set title "set hidden3d" 0.000000,0.000000  font ""
+
+set pm3d at s
+splot 'terrain.txt' matrix with lines notitle
+pause -1
+

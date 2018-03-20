@@ -1,0 +1,4 @@
+
+splot 'data1.txt' matrix with pm3d, 'data2.txt' with points palette pointsize 2 pointtype 7
+pause -1
+
