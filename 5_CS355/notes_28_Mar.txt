@@ -1,0 +1,62 @@
+Closures
+
+- Suprogram and the referencing enviornment where it wass defined.
+
+Some langs (not C++) subprograms can be defined anywhere, including in another declare area
+
+Shared memory  (common blocks) goes as far back as 1961--no type checking, just declare a block.
+
+
+|   S1    |<-
+|_________| `
+params    | ` Return
+Subprograms `
+|         | `
+|   S2 ---|-`
+
+
+
+TIP: Don't use @ or ! in c++ names
+
+
+
+Old way:
+
+|   Env   |
+|_________|
+|         |
+|  Main   |
+|_________|
+Param     |
+etc.      |
+----|     |
+obj | S1  |
+code|     |
+|_________|
+
+
+New way:
+
+|   Env   |<--
+|_________|  `
+|         |  `
+|  Main   |  `
+|_________|  `
+Param     |  `
+etc.      |  `
+----|     |  `
+pntr|-S1--|--`
+|         |
+|_________|
+
+
+
+
+
+
+
+
+
+
+
+
