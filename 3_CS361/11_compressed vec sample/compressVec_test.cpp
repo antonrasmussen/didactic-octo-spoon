@@ -5,9 +5,10 @@ using namespace std;
 
 int main()
 {
-    entry * eptr;
+	
+	entry * eptr;
     eptr = new entry(0,2, 3);
-    ///eptr->display();
+    //eptr->display();
 
     rvec row1;
     row1.addEntry(eptr);
