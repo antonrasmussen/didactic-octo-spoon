@@ -1,0 +1,37 @@
+Methods of steepest descent -- used for finding minima of roots
+
+
+
+
+1. Given H(x,y)
+2. Comput Grad( H )
+```Generate F(x) to compute
+3. Substitute x <- x + grad(Hh)
+``````````````y <- y + grad(Hh)
+4. Yield G(h)
+5. G'(h) -> function to eval (x,y, grad(h))
+
+
+---
+
+H(x,y) = y/2 + xy + x^2 - 3y
+
+Ho(30,60)
+
+grad(Hx) = y + 2x = a
+grad(Hy) = y + x - 3 = b
+
+replace x <- x + ah
+````````y <- y + bh
+
+G = ((y + bh)^2) / 2 + (x + ah)(y + bh) + (x + ah)^2 - 3(y + bh)
+G = 1/2 * (y^2 + 2ybh + (b^2)*(h^2)) + (xy + xbh + yah + abh^2) + (x^2 +2axh + (a^2) * (h^2)) - 3y -3bh
+
+anything without an h goes away
+
+G'(h) = yb + (b^2)*h + (b^2)*h +xb + ya + 2abh + 2ax + (2a^2)*h - 3b
+
+(b^2  +  2ab  + 2a^2 )h + (yb + xb + ya + 2ax - 3b) = 0
+
+h = -(yb +xb +ya + 2ax -3b) / (b^2 + 2ab + 2a^2)
+
