@@ -1,0 +1,131 @@
+Jumping right to CH 13 -> Concurrency
+
+
+
+Look ahead: processes and their various states
+
+
+
+
+High Level Scheduler - has access to resources it needs to start running.
+
+-> Put on ready queue
+
+
+ New                ----------------------------------           Terminate (Dead)
+----> [Ready]------/                                  \-----[Run]---->
+           ^ ^-----------------------------------------------/
+            \                                               /  
+             \                          /
+              \                        /```   ```  ``` ````  
+               \                     \V/
+               -------------------[Blocked] {Block list, with independent elements}
+
+Page faults and processIO have the same effect on the system
+
+Context switches are pure overhead
+
+Goal: make sure we aren't waiting too long on ready queue -> initiated quantum (= time slice)
+
+
+Most programs are single process---> but, you can write processes with multiple threads. A thread can block an IO call. Another thread can be shifted to that runs--> assuming we're not near the end--the quantum, new thread can be switched to because the context switch is lightweight ==> "thread = lightweight process"; put IO in their own threads so that process will continue to run. If it's near the quantum then it's gonna switch out thread anyway.
+
+Put certain functions in their own threads so that it's cheaper. A thread is not an independent process. Unlike the book says, tasks are not necessarily the same as threads. Tasks can be completely different processes that start and are unrelated to what started them. Or tasks can be a thread within a single process (treated differently).
+
+
+In old days: processes used to communicate via pipes | -> pipe is a file operation, first one copies into second one.... 
+
+Rendezvous
+
+P1                      P2
+|			|
+|			|
+|			|
+|			|
+*---------------------->*
+|\			|
+| > Give this process something meaningful to do while waiting
+|/			|
+*<----------------------*
+|			|
+V			V
+
+When P1 gets to rendezvous, if it's lower than one that's there, it'll be bumped. 
+
+Another reason for changing process priority = aging --> prevents starvation of low level priority processes
+
+See:http://www.agileload.com/agileload/blog/2012/11/20/concurrency-issues-and-significance-of-rendezvous-commands	
+
+
+As programmer, you don't want to have to know whether a process is on the same computer or another computer when programming... not very portable. The code should be the same; the OS decides how it's going to effect--> either shared memory (same computer) or message passing. Speed should be the only thing that's different.
+
+
+
+4/9/18
+
+Assignment #6 is up (Last One)
+
+
+Still dealing with processes.Surprised by this chapter-->more like OS  instead of Prog Langs.
+
+Process States
+
+ New                ----------------------------------           Terminate (Dead)
+----> [Ready]------/                                  \-----[Run]---->
+           ^ ^-----------------------------------------------/
+            \                                               /  
+             \                          /
+              \                        /```   ```  ``` ````  
+               \                     \V/
+               -------------------[Blocked] {Block list, with independent elements}
+
+Two flavors of concurrency: UNIX model, pure 
+
+Unix model->fork and wait; fork system call creates another process. This is a system call and not a language construct.
+*Create a process to conduct a specific task.... child is a thread. Inherits everything from parent. 
+
+Even microsoft now uses a system call called fork [makes a sep. process] (and weight-->goes with fork)
+
+                ..> parent -> Test . .[Wait]
+               /                            \
+Parent -> FOrk                              --> 	      
+               \                            /
+                ..> Child -> Test . . [Wait]
+
+Test based on PID. 
+
+Don't stick too many blocking calls in the child b/c the parent can't continue until the child finishes... so, if the child is hung up, the parent is hung up. In UNIX make child process as short and as simple as you can. Parent can't go past wait position until child is finished. 
+
+Can't overload task names; but, you can make an array, record, LL of tasks....
+
+
+
+Deadlock: Process 1 has Resource 1 and wants Resource 2. Process 2 has Resource 2 and wants Resource 1
+
+                                  R1
+                                /    ^
+                               V      \
+                               P1    P2
+                                \    ^
+                                 V  /
+                                  R2
+
+What to do about deadlock? http://www.cs.yale.edu/homes/aspnes/pinewiki/Deadlock.html
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

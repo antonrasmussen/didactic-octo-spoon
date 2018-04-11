@@ -1,0 +1,12 @@
+x++;
+
+p1			p2
+
+
+fetch x			fetch x
+--------		--------
+inc x			inc x
+store x			store x
+
+
+look at the concept of a critical section!
