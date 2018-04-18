@@ -1,0 +1,30 @@
+INIT - have application or application via the window manager (policy free?) connect to the windowing environment.
+BUILD GO's
+REGISTER EVT's + CB's
+REALIZE GO's
+EVT LOOP
+
+Talking about windowing
+
+
+MIT Built X to sit on Unix.... apple's initial GUI was built on X--> became OSX
+
+
+X is getting old
+
+Created as a graduate project one summer in the 90s
+
+
+
+Windowing system sits on top of OS [Window Server] -> OS plays with Hardware
+
+Virtual screen space: window within a window
+
+Had problems dealing with user input
+
+Look into visual surface determiniation for window appearance illusion... e.g. windows behind windows
+
+Event system is interrupt driven.... 32 events
+
+====================================================
+Functional Programming langs
