@@ -1,0 +1,3 @@
+LISP: has undergone a series of transformations
+
+Common Lisp was all Lisp dialects added together... lots of redundancy included.
